@@ -10,12 +10,12 @@ function plugins(){
   fs.readdir(__dirname+"/plugins",(err,file)=>{
     file.forEach((f,i)=>{
       if(f.endsWith(".js")){
-        plug.push({id:i,func: require(`./plugins/${f}`)});
+        plug.push({name:f,id:i,func: require(`./plugins/${f}`)});
       }
     })
     console.log(plug);
 
-    console.log("\n\nForma de usar-- plug[<id>].func.(function)")
+    console.log("\n\nUsage:-- plug[<id>].func.(function)")
   })
 }
 
