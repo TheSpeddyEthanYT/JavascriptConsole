@@ -15,8 +15,7 @@ function plugins(){
         plug.push({name:f,id:i,func: require(`./plugins/${f}`)});
       }
     })
-    console.log(plug);
-
+    console.log(plug)
     console.log("\n\nUsage:-- plug[<id>].func.(function)")
   })
 }
@@ -52,7 +51,8 @@ function Question(){
         return setImmediate(()=>Question());
       }
       if(evaledParam.toLowerCase()==="version"){
-        return console.log(require("./package.json").version);
+        console.log(require("./package.json").version);
+        return setImmediate(()=>Question());
       }
       let evaled = eval(evaledParam);
       if(evaledParam.toLowerCase().includes("console.log")||evaledParam.toLowerCase().includes("console.dir")||evaledParam.toLowerCase().includes("console.error")){
@@ -89,7 +89,8 @@ try{
     return setImmediate(()=>Question());
   }
   if(evaledParam.toLowerCase()==="version"){
-    return console.log(require("./package.json").version);
+    console.log(require("./package.json").version);
+    return setImmediate(()=>Question());
   }
   let evaled = eval(evaledParam);
   if(evaledParam.toLowerCase().includes("console.log")||evaledParam.toLowerCase().includes("console.dir")||evaledParam.toLowerCase().includes("console.error")){

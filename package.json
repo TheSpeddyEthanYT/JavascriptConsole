@@ -1,6 +1,6 @@
 {
   "name": "javascriptconsole",
-  "version": "1.5.4",
+  "version": "1.6.0",
   "description": "<h1>Javascript Console</h1>",
   "main": "index.js",
   "scripts": {
@@ -13,11 +13,19 @@
     "type": "git",
     "url": "git+https://github.com/TheSpeddyEthanYT/JavascriptConsole.git"
   },
-  "keywords": ["js","jsconsole","javascriptconsole","console"],
+  "keywords": [
+    "js",
+    "jsconsole",
+    "javascriptconsole",
+    "console"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TheSpeddyEthanYT/JavascriptConsole/issues"
   },
-  "homepage": "https://github.com/TheSpeddyEthanYT/JavascriptConsole#readme"
+  "homepage": "https://github.com/TheSpeddyEthanYT/JavascriptConsole#readme",
+  "dependencies": {
+    "javascriptconsole": "^1.6.0"
+  }
 }
