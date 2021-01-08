@@ -58,11 +58,17 @@ try{
     return exitFunc()
   }
   if(evaledParam==="help"){
+    console.log('Installed Plugins')
     plugins();
+    console.log('\nFunctions')
+    console.log('Exit, Exits the program')
+    console.log('Clear, Clears the prompt')
+    console.log('Help, You are using it right now, Its made for give help and orientation')
     return setImmediate(()=>Question());
   }
   if(evaledParam==="clear"){
     console.clear() 
+    return setImmediate(()=>Question());
   }
   let evaled = eval(evaledParam);
   if(evaledParam.includes("console.log")||evaledParam.includes("console.dir")||evaledParam.includes("console.error")){
