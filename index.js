@@ -31,10 +31,10 @@ function exitFunc(){
 function Question(){
   rl.question('> ', (evaledParam) =>{
     try{
-      if (evaledParam == 'exit'){
+      if (evaledParam.toLowerCase() == 'exit'){
         return exitFunc()
       }
-      if(evaledParam==="help"){
+      if(evaledParam.toLowerCase()==="help"){
   
     plugins();
     console.log('\nFunctions')
@@ -44,12 +44,12 @@ function Question(){
           console.log('Installed Plugins')
     return setImmediate(()=>Question());
   }
-  if(evaledParam==="clear"){
+  if(evaledParam.toLowerCase()==="clear"){
     console.clear() 
     return setImmediate(()=>Question());
   }
       let evaled = eval(evaledParam);
-      if(evaledParam.includes("console.log")||evaledParam.includes("console.dir")||evaledParam.includes("console.error")){
+      if(evaledParam.toLowerCase().includes("console.log")||evaledParam.toLowerCase().includes("console.dir")||evaledParam.toLowerCase().includes("console.error")){
         return setImmediate(()=>Question());
       }else{
         console.log(evaled);
@@ -64,10 +64,10 @@ function Question(){
 }
 rl.question('> ', (evaledParam) =>{
 try{
-  if (evaledParam == 'exit'){
+  if (evaledParam.toLowerCase() == 'exit'){
     return exitFunc()
   }
-  if(evaledParam==="help"){
+  if(evaledParam.toLowerCase()==="help"){
  
     plugins();
     console.log('\nFunctions')
@@ -77,12 +77,12 @@ try{
        console.log('Installed Plugins')
     return setImmediate(()=>Question());
   }
-  if(evaledParam==="clear"){
+  if(evaledParam.toLowerCase()==="clear"){
     console.clear() 
     return setImmediate(()=>Question());
   }
   let evaled = eval(evaledParam);
-  if(evaledParam.includes("console.log")||evaledParam.includes("console.dir")||evaledParam.includes("console.error")){
+  if(evaledParam.toLowerCase().includes("console.log")||evaledParam.toLowerCase().includes("console.dir")||evaledParam.toLowerCase().includes("console.error")){
     return setImmediate(()=>Question());
   }else{
     console.log(evaled);
@@ -94,4 +94,3 @@ try{
     setImmediate(()=>Question());
   }
 });
-
