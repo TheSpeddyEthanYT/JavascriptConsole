@@ -4,9 +4,10 @@ const fs = require('fs');
 
 //Also made by RogelioLB
 
-const plug = [];
+let plug = [];
 
 function plugins(){
+  plug = [];
   fs.readdir(__dirname+"/plugins",(err,file)=>{
     file.forEach((f,i)=>{
       if(f.endsWith(".js")){
@@ -34,7 +35,7 @@ function Question(){
       if (evaledParam.toLowerCase() == 'exit'){
         return exitFunc()
       }
-      if(evaledParam.toLowerCase()==="help"){
+    if(evaledParam.toLowerCase()==="help"){
   
     plugins();
     console.log('\nFunctions')
