@@ -3,7 +3,8 @@
 
 <p>Hello! So you are new using this console!, Lets get you started</p>
 
-
+<h3>Requirements</h3>
+<p>Node.js</p>
 
 <h2>How to use</h2>
 
