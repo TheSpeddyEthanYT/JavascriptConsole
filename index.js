@@ -35,12 +35,13 @@ function Question(){
         return exitFunc()
       }
       if(evaledParam==="help"){
-    console.log('Installed Plugins')
+  
     plugins();
     console.log('\nFunctions')
     console.log('Exit, Exits the program')
     console.log('Clear, Clears the prompt')
     console.log('Help, You are using it right now, Its made for give help and orientation')
+          console.log('Installed Plugins')
     return setImmediate(()=>Question());
   }
   if(evaledParam==="clear"){
@@ -67,12 +68,13 @@ try{
     return exitFunc()
   }
   if(evaledParam==="help"){
-    console.log('Installed Plugins')
+ 
     plugins();
     console.log('\nFunctions')
     console.log('Exit, Exits the program')
     console.log('Clear, Clears the prompt')
     console.log('Help, You are using it right now, Its made for give help and orientation')
+       console.log('Installed Plugins')
     return setImmediate(()=>Question());
   }
   if(evaledParam==="clear"){
