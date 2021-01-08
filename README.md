@@ -18,7 +18,7 @@
 <p>
   Plugins are additions to the console, they are javascript files that have functions,
   When you execute the 'help' command you will see all the plugins you have installed and its IDs.
-  For Execute a plugin function use 'plug[<ID>].func.(Function)'.
+  For Execute a plugin function use 'plug[ID].func.(Function)'.
 </p>
 
 <h2>Developing Plugins</h2>
