@@ -1,0 +1,23 @@
+{
+  "name": "javascriptconsole",
+  "version": "1.5.3",
+  "description": "<h1>Javascript Console</h1>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "bin": {
+    "js": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheSpeddyEthanYT/JavascriptConsole.git"
+  },
+  "keywords": ["js","jsconsole","javascriptconsole","console"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheSpeddyEthanYT/JavascriptConsole/issues"
+  },
+  "homepage": "https://github.com/TheSpeddyEthanYT/JavascriptConsole#readme"
+}

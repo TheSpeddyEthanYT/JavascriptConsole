@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 const { read } = require('fs');
 const readline = require('readline')
 const fs = require('fs');
@@ -58,7 +59,7 @@ function Question(){
       }
     }
       catch(err){
-        console.log("Error");
+        console.log(err);
         setImmediate(()=>Question());
       }
   });
@@ -72,15 +73,19 @@ try{
  
     plugins();
     console.log('\nFunctions')
-    console.log('Exit, Exits the program')
-    console.log('Clear, Clears the prompt')
-    console.log('Help, You are using it right now, Its made for give help and orientation')
-       console.log('Installed Plugins')
+    console.log('Exit, Exits the program.')
+    console.log('Clear, Clears the prompt.')
+    console.log('Version, Show the version of the console.')
+    console.log('Help, You are using it right now, Its made for give help and orientation.')
+       console.log('Installed Plugins.')
     return setImmediate(()=>Question());
   }
   if(evaledParam.toLowerCase()==="clear"){
     console.clear() 
     return setImmediate(()=>Question());
+  }
+  if(evaledParam.toLowerCase()==="version"){
+    return console.log(require("./package.json").version);
   }
   let evaled = eval(evaledParam);
   if(evaledParam.toLowerCase().includes("console.log")||evaledParam.toLowerCase().includes("console.dir")||evaledParam.toLowerCase().includes("console.error")){
@@ -91,7 +96,7 @@ try{
   }
 }
   catch(err){
-    console.log("Error");
+    console.log(err);
     setImmediate(()=>Question());
   }
 });
