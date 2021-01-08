@@ -61,6 +61,9 @@ try{
     plugins();
     return setImmediate(()=>Question());
   }
+  if(evaledParam==="clear"){
+    console.clear() 
+  }
   let evaled = eval(evaledParam);
   if(evaledParam.includes("console.log")||evaledParam.includes("console.dir")||evaledParam.includes("console.error")){
     return setImmediate(()=>Question());
