@@ -1,6 +1,6 @@
 {
   "name": "javascriptconsole",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "<h1>Javascript Console</h1>",
   "main": "index.js",
   "scripts": {
