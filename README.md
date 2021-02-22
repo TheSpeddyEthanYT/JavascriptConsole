@@ -3,7 +3,12 @@
 
 <p>Hello! So you are new using this console!, Lets get you started</p>
 
+<h2>Installation</h2>
+<p>
+For install it you download this repo and type
+</p>
 
+<code>npm i</code>
 
 <h2>How to use</h2>
 
@@ -28,9 +33,5 @@
   Its easy, just create your own functions and then export them using 'module.exports'
 </p>
 <code>
-function sum(x,y){
- return x+y
-}
-
-module.exports = {sum}
+module.exports = function(x,y){return x+y}
 </code>
