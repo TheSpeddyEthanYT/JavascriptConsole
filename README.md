@@ -3,17 +3,13 @@
 
 <p>Hello! So you are new using this console!, Lets get you started</p>
 
-<h3>Requirements</h3>
-<p>Node.js</p>
+
 
 <h2>How to use</h2>
 
-<h2>Installation</h2>
-<code>npm i javascriptconsole -g</code>
-
 <p>
   Its very simple to use!
-  When you execute it using 'js'(node.js required) it asks you for a code for it to be executed, after you write it, press enter,
+  When you execute it using 'node index.js'(node.js required) it asks you for a code for it to be executed, after you write it, press enter,
   the result of that code will be logged into the console.
 </p>
 

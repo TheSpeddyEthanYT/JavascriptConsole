@@ -1,0 +1,6 @@
+{
+    "1.7.9":{
+        "type": "Bugfix/Feature Elimination",
+        "description": "Removed Discord-RPC module that was making problems, now you will not be able to use RPC but the console is better now, Also added changelogs!"
+    }
+}

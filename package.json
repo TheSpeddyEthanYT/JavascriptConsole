@@ -1,31 +1,60 @@
 {
-  "name": "javascriptconsole",
-  "version": "1.6.0",
-  "description": "<h1>Javascript Console</h1>",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
+  "_from": "javascriptconsole",
+  "_id": "javascriptconsole@1.7.9",
+  "_inBundle": false,
+  "_integrity": "sha512-PxuqnSziyIyr3tA9uo5cxztsXFbI+4wrJRGuueIyhooNr4+ORsvJ/k/9m6o9bCoBUfgSADEAGTi1rIGg1QJH0w==",
+  "_location": "/javascriptconsole",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "javascriptconsole",
+    "name": "javascriptconsole",
+    "escapedName": "javascriptconsole",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/javascriptconsole/-/javascriptconsole-1.7.9.tgz",
+  "_shasum": "2ae9aabb71fe8ab3c4e98c08feb4f818a21588db",
+  "_spec": "javascriptconsole",
+  "_where": "C:\\Users\\ethan",
+  "author": {
+    "name": "TheSpeddyEthanYT"
   },
   "bin": {
     "js": "index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TheSpeddyEthanYT/JavascriptConsole.git"
+  "bugs": {
+    "url": "https://github.com/TheSpeddyEthanYT/JavascriptConsole/issues"
   },
+  "bundleDependencies": false,
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "deprecated": false,
+  "description": "<h1>Javascript Console</h1>",
+  "devDependencies": {},
+  "homepage": "https://github.com/TheSpeddyEthanYT/JavascriptConsole#readme",
   "keywords": [
     "js",
     "jsconsole",
     "javascriptconsole",
     "console"
   ],
-  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TheSpeddyEthanYT/JavascriptConsole/issues"
+  "main": "index.js",
+  "name": "javascriptconsole",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheSpeddyEthanYT/JavascriptConsole.git"
   },
-  "homepage": "https://github.com/TheSpeddyEthanYT/JavascriptConsole#readme",
-  "dependencies": {
-    "javascriptconsole": "^1.6.0"
-  }
+  "scripts": {
+    "start": "node index.js"
+  },
+  "version": "1.7.9"
 }
