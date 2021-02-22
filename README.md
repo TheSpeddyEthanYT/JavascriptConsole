@@ -5,7 +5,7 @@
 
 <h2>Installation</h2>
 <p>
-For install it you download this repo and type
+  For install it you download this repo and type in console this:
 </p>
 
 <code>npm i</code>
